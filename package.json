@@ -1,0 +1,19 @@
+{
+  "name": "radio-checkbox-switch",
+  "version": "v1.0.0",
+  "main": "dist/css/radio-checkbox-switch.css",
+  "repository": {
+    "type": "gitee",
+    "url": "https://gitee.com/liming-1996/radio-checkbox-switch.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-less": "^0.1.7",
+    "less": "^3"
+  }
+}
