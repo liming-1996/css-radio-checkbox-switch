@@ -1,0 +1,19 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.container .item-gropu {
+  width: 100%;
+  margin: 25px 0 15px;
+}
+.container .item-gropu::after,
+.container .item-gropu::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container .item-gropu .item {
+  float: left;
+  width: 25%;
+}

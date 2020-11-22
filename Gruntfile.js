@@ -7,8 +7,14 @@ module.exports = function(grunt) {
                         'build/less/common.less',
                         'build/less/radio.less',
                         'build/less/checkbox.less',
-                        'build/less/switch.less',
-                    ]
+                        'build/less/switch.less'
+                    ],
+					'dist/css/demo.css': [
+					    'build/less/demo.less'
+					],
+					'dist/css/switch.css': [
+					    'build/less/switch.less'
+					]
                 }
             }
         },

@@ -1,0 +1,22 @@
+.container{
+	width: 1200px; 
+	margin: 0 auto;
+	padding: 15px;
+	
+	.item-gropu{
+		&::after,
+		&::before{
+			content: '';
+			display: table;
+			clear: both;
+		}
+		width: 100%;
+		margin: 25px 0 15px;
+		
+		.item{
+			float: left;
+			width: 25%;
+		}
+	}
+	
+} 
