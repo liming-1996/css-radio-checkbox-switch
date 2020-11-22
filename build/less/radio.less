@@ -10,7 +10,6 @@
         width: 18px;
         height: 18px;
         vertical-align: middle;
-        cursor: pointer;
 
         &::before {
             content: '';
@@ -21,33 +20,30 @@
             height: 100%;
 			border-radius: 50%;
 			overflow: hidden;
-            border: @primary;
-            background: transparent;
+            background: #fff;
             border: 1px solid #eee;
-            transition: background 0.3s;
+			box-sizing: border-box;
+			transition: background-color 0.15s ease-in-out, border 0.15s;
         }
 
         &::after {
             content: '';
             position: absolute;
-            top: 5px;
-            left: 10px;
-            box-sizing: border-box;
-            width: 6px;
-            height: 10px;
-            transform: rotate(45deg);
-            transform-origin: 50% 0;
-            border-right: 3px solid #fff;
-            border-bottom: 3px solid #fff;
-            box-sizing: border-box;
-            opacity: 0;
-			transition: opacity 0.3s;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+            background-position: center;
         }
     }
     
     & > input[type='radio']:checked + .el-radio-style {
         &::before {
             background: @primary;
+			border-color: @primary;
         }
 
         &::after {
@@ -59,5 +55,55 @@
     	opacity: 0.65;
 		cursor: not-allowed;
     }
+	
+	/**尺寸**/
+	&.el-radio-xs .el-radio-style{
+		width: 14px;
+		height: 14px;
+	}
+	
+	&.el-radio-sm .el-radio-style{
+		width: 16px;
+		height: 16px;
+	}
+	
+	&.el-radio-md .el-radio-style{
+		width: 18px;
+		height: 18px;
+	}
+	
+	&.el-radio-lg .el-radio-style{
+		width: 20px;
+		height: 20px;
+	}
+	
+	/**主题**/
+	&.el-radio-primary > input[type='radio']:checked + .el-radio-style {
+	    &::before {
+	        background: @primary;
+			border-color: @primary;
+	    }
+	}
+	
+	&.el-radio-success > input[type='radio']:checked + .el-radio-style {
+	    &::before {
+	        background: @success;
+			border-color: @success;
+	    }
+	}
+	
+	&.el-radio-warning > input[type='radio']:checked + .el-radio-style {
+	    &::before {
+	        background: @warning;
+			border-color: @warning;
+	    }
+	}
+	
+	&.el-radio-danger > input[type='radio']:checked + .el-radio-style {
+	    &::before {
+	        background: @danger;
+			border-color: @danger;
+	    }
+	}
     
 }

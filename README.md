@@ -1,7 +1,7 @@
 # radio-checkbox-switch
 
 #### 介绍
-纯css实现radio，checkbox和switch，无需js脚本，兼容IE9及以上
+纯css实现radio，checkbox和switch，无需js脚本，兼容IE9及以上(IE9下无动画效果)
 
 #### 软件架构
 纯css
