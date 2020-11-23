@@ -1,9 +1,17 @@
 .el-hidden {
   display: none !important;
 }
+input,
+label {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
 
 .el-hidden {
   display: none !important;
+}
+input,
+label {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
 }
 .el-radio {
   -moz-user-select: none;
@@ -32,7 +40,7 @@
   border-radius: 50%;
   overflow: hidden;
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #e7e7e7;
   box-sizing: border-box;
   transition: background-color 0.15s ease-in-out, border 0.15s;
 }
@@ -47,6 +55,8 @@
   background-size: 50%;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
   background-position: center;
+  transition: opacity 0.15s;
+  opacity: 0;
 }
 .el-radio > input[type='radio']:checked + .el-radio-style::before {
   background: #3c8dbc;
@@ -55,8 +65,8 @@
 .el-radio > input[type='radio']:checked + .el-radio-style::after {
   opacity: 1;
 }
-.el-radio > input[type='radio']:disabled + .el-radio-style {
-  opacity: 0.65;
+.el-radio.el-radio-disabled {
+  opacity: 0.7;
   cursor: not-allowed;
 }
 .el-radio.el-radio-xs .el-radio-style {
@@ -95,6 +105,10 @@
 .el-hidden {
   display: none !important;
 }
+input,
+label {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
 .el-checkbox {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -122,7 +136,7 @@
   border: #3c8dbc;
   background: #fff;
   border-radius: 3px;
-  border: 1px solid #eee;
+  border: 1px solid #e7e7e7;
   transition: background-color 0.15s ease-in-out, border 0.15s;
   box-sizing: border-box;
 }
@@ -137,6 +151,8 @@
   background-size: 50%;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
   background-position: center;
+  transition: opacity 0.15s;
+  opacity: 0;
 }
 .el-checkbox > input[type='checkbox']:checked + .el-checkbox-style::before {
   background: #3c8dbc;
@@ -145,9 +161,9 @@
 .el-checkbox > input[type='checkbox']:checked + .el-checkbox-style::after {
   opacity: 1;
 }
-.el-checkbox > input[type='checkbox']:disabled + .el-checkbox-style {
+.el-checkbox.el-checkbox-disabled {
+  opacity: 0.7;
   cursor: not-allowed;
-  opacity: 0.65;
 }
 .el-checkbox.el-checkbox-xs .el-checkbox-style {
   width: 14px;
@@ -185,6 +201,10 @@
 .el-hidden {
   display: none !important;
 }
+input,
+label {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
 .el-switch {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -205,7 +225,7 @@
   height: 34px;
   vertical-align: middle;
   border-radius: 18px;
-  box-shadow: inset 0 0 0 1px #e9e9e9;
+  box-shadow: inset 0 0 0 1px #e7e7e7;
   transition: box-shadow 0.5s;
   overflow: hidden;
 }
@@ -333,7 +353,7 @@
 .el-switch.el-switch-lg.el-switch-danger > input[type='checkbox']:checked + .el-switch-style {
   box-shadow: inset 0 0 0 21px #dd4b39;
 }
-.el-switch > input[type='checkbox']:disabled + .el-switch-style {
-  opacity: 0.65;
+.el-switch.el-switch-disabled {
+  opacity: 0.7;
   cursor: not-allowed;
 }

@@ -1,5 +1,5 @@
 .container{
-	width: 1200px; 
+	max-width: 1200px; 
 	margin: 0 auto;
 	padding: 15px;
 	
@@ -18,5 +18,15 @@
 			width: 25%;
 		}
 	}
-	
 } 
+
+@media screen and (max-width: 700px) {
+    .container{
+		max-width: 100%;
+		
+		.item-gropu .item{
+			width: 50%;
+			margin-bottom: 15px;
+		}
+	}
+}

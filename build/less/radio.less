@@ -21,7 +21,7 @@
 			border-radius: 50%;
 			overflow: hidden;
             background: #fff;
-            border: 1px solid #eee;
+            border: 1px solid #e7e7e7;
 			box-sizing: border-box;
 			transition: background-color 0.15s ease-in-out, border 0.15s;
         }
@@ -37,6 +37,8 @@
             background-size: 50%;
             background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
             background-position: center;
+			transition: opacity 0.15s;
+			opacity: 0;
         }
     }
     
@@ -51,9 +53,9 @@
         }
     }
     
-    & > input[type='radio']:disabled + .el-radio-style {
-    	opacity: 0.65;
-		cursor: not-allowed;
+    &.el-radio-disabled{
+    	opacity: @disabled-opacity;
+    	cursor: not-allowed;
     }
 	
 	/**尺寸**/
